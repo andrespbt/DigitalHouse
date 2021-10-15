@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.plus-button {
+  position: fixed;
+  right: 5px;
+  top: 45vh;
+}
+
+.circle {
+  width: 40px;
+}
+
+.plus {
+  position: relative;
+  left: 31px;
+  bottom: 11px;
+  width: 15px;
+}
+
+.header-bar {
+  width: 100%;
+  height: calc(100vh-5662px);
+}
+
+.discount-bar {
+  height: 2vh;
+  background-color: #d1891c;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  line-height: 0.5rem;
+}
+
+.discount-bar span {
+  margin-left: 5%;
+}
+
+.tittle {
+  height: 5vh;
+  background-color: #00669f;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+.tittle span {
+  margin-left: 5%;
+}
+
+.super-heroes {
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.batman-card {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
+  width: 60%;
+  background-image: url("../img/fondo-batman.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.corazon-batman {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 40%;
+  height: 30px;
+}
+
+.batman-perfil {
+  width: 40%;
+  position: absolute;
+  top: 150px;
+  border-radius: 50px;
+}
+
+.text-batman {
+  position: absolute;
+  top: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-batman h2 {
+  font-size: 1.5rem;
+}
+
+.text-batman span {
+  padding: 20px;
+  font-size: 0.7rem;
+}
+
+.text-batman .ver-mas {
+  width: 50%;
+  background-color: #00669f;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maravilla-card {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
+  width: 60%;
+  background-image: url("../img/fondo-maravilla.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.corazon-maravilla {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 40%;
+  height: 30px;
+}
+
+.maravilla-perfil {
+  width: 40%;
+  position: absolute;
+  top: 150px;
+  border-radius: 50px;
+}
+
+.text-maravilla {
+  position: absolute;
+  top: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.text-maravilla h2 {
+  font-size: 1.2rem;
+}
+
+.text-maravilla span {
+  padding: 20px;
+  font-size: 0.7rem;
+}
+
+.text-maravilla .ver-mas {
+  width: 50%;
+  background-color: #00669f;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.superman-card {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
+  width: 60%;
+  background-image: url("../img/fondo-superman.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.corazon-superman {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 40%;
+  height: 30px;
+}
+
+.superman-perfil {
+  width: 40%;
+  position: absolute;
+  top: 150px;
+  border-radius: 50px;
+}
+
+.text-superman {
+  position: absolute;
+  top: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-superman h2 {
+  font-size: 1.5rem;
+}
+
+.text-superman span {
+  padding: 20px;
+  font-size: 0.7rem;
+}
+
+.text-superman .ver-mas {
+  width: 50%;
+  background-color: #00669f;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.harley-card {
+  width: 40vw;
+  height: 550px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
+  background-image: url("../img/fondo-harley.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.corazon-harley {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 40%;
+  height: 30px;
+}
+
+.harley-perfil {
+  width: 40%;
+  position: absolute;
+  top: 150px;
+  border-radius: 50px;
+}
+
+.text-harley {
+  position: absolute;
+  top: 320px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-harley h2 {
+  font-size: 1.5rem;
+}
+
+.text-harley span {
+  padding: 20px;
+  font-size: 0.7rem;
+}
+
+.text-harley .ver-mas {
+  width: 50%;
+  background-color: #00669f;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 100px;
+  height: 4vh;
+  width: 100%;
+  background: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  font-size: 0.5rem;
+  color: white;
+  position: relative;
+}
+
+footer .logo-footer {
+  width: 15%;
+  height: 1rem;
+  position: absolute;
+  right: 10px;
+}
+
+@media (min-width: 768px) {
+  footer .logo-footer {
+    width: 15%;
+    height: 1rem;
+    position: absolute;
+    right: 20px;
+  }
+
+  footer span {
+    font-size: 0.7rem;
+  }
+  .plus-button {
+    position: fixed;
+    left: 80vw;
+    top: 45vh;
+    z-index: 10;
+  }
+
+  .circle {
+    width: 60px;
+  }
+
+  .plus {
+    position: relative;
+    left: 43px;
+    bottom: 18px;
+    width: 20px;
+  }
+
+  .super-heroes {
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .harley-card {
+    display: flex;
+  }
+
+  .batman-card {
+    width: 40vw;
+  }
+
+  .text-batman {
+    top: 320px;
+  }
+
+  .maravilla-card {
+    width: 40vw;
+  }
+
+  .text-maravilla {
+    top: 320px;
+  }
+
+  .superman-card {
+    width: 40vw;
+  }
+
+  .text-superman {
+    top: 320px;
+  }
+
+  @media (min-width: 1280px) {
+    .super-heroes {
+      height: 1800px;
+    }
+    .plus-button {
+      position: fixed;
+      left: 93vw;
+      top: 45vh;
+      z-index: 10;
+    }
+    .batman-card {
+      height: 800px;
+      background-size: 100% 300px;
+    }
+    .corazon-batman {
+      position: absolute;
+      top: 20px;
+      left: -50px;
+    }
+
+    .batman-perfil {
+      width: 30%;
+      top: 200px;
+    }
+    .text-batman {
+      margin-top: 10px;
+      top: 420px;
+      gap: 40px;
+    }
+
+    .text-batman h2 {
+      font-size: 2rem;
+    }
+
+    .text-batman span {
+      padding: 20px;
+      font-size: 1rem;
+    }
+
+    .text-batman .ver-mas {
+      width: 50%;
+      height: 40px;
+    }
+
+    .maravilla-card {
+      height: 800px;
+      background-size: 100% 300px;
+    }
+    .corazon-maravilla {
+      position: absolute;
+      top: 20px;
+      left: -50px;
+    }
+
+    .maravilla-perfil {
+      width: 30%;
+      top: 200px;
+    }
+    .text-maravilla {
+      margin-top: 10px;
+      top: 420px;
+      gap: 40px;
+    }
+
+    .text-maravilla h2 {
+      font-size: 2rem;
+    }
+
+    .text-maravilla span {
+      padding: 20px;
+      font-size: 1rem;
+    }
+
+    .text-maravilla .ver-mas {
+      width: 50%;
+      height: 40px;
+    }
+
+    .superman-card {
+      height: 800px;
+      background-size: 100% 300px;
+    }
+    .corazon-superman {
+      position: absolute;
+      top: 20px;
+      left: -50px;
+    }
+
+    .superman-perfil {
+      width: 30%;
+      top: 200px;
+    }
+    .text-superman {
+      margin-top: 10px;
+      top: 420px;
+      gap: 40px;
+    }
+
+    .text-superman h2 {
+      font-size: 2rem;
+    }
+
+    .text-superman span {
+      padding: 20px;
+      font-size: 1rem;
+    }
+
+    .text-superman .ver-mas {
+      width: 50%;
+      height: 40px;
+    }
+
+    .harley-card {
+      height: 800px;
+      background-size: 100% 300px;
+    }
+    .corazon-harley {
+      position: absolute;
+      top: 20px;
+      left: -50px;
+    }
+
+    .harley-perfil {
+      width: 30%;
+      top: 200px;
+    }
+    .text-harley {
+      margin-top: 10px;
+      top: 420px;
+      gap: 40px;
+    }
+
+    .text-harley h2 {
+      font-size: 2rem;
+    }
+
+    .text-harley span {
+      padding: 20px;
+      font-size: 1rem;
+    }
+
+    .text-harley .ver-mas {
+      width: 50%;
+      height: 40px;
+    }
+  }
+}
