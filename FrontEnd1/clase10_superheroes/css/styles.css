@@ -1,0 +1,319 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    position: absolute;
+    width: 1024px;
+    height: 1024px;
+    
+}
+.barra_verde{
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    background-color: #1CD1B0;
+    font-size:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.barra_azul_header{
+    position: absolute;
+    top: 38px;
+    width: 100%;
+    height: 101px;
+    background-color: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+h1{
+    position: absolute;
+    width: 128px;
+    height: 47px;
+    left: 28px;
+    top: 28px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.caja_batman{
+    position: absolute;
+    width: 300px;
+    height: 529px;
+    left: 32px;
+    top: 292px;
+    box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
+}
+.fondo_batman_caja{
+    position:relative;
+}
+
+.corazon_batman{
+    position: absolute;
+    top: 15.88px;
+    bottom: 6.25%;
+    right: 250px;
+}
+
+.batman_foto{
+    position: absolute;
+    width: 120px;
+    height: 118px;
+    left: 90px;
+    top: 128px;
+    z-index: 10;
+    border-radius: 900px;
+}
+.texto_batman{
+    position: absolute;
+    width: 300px;
+    background: #F3F3F3;
+    top: 190px;
+    height: 336px;
+}
+
+.batman_h2{
+    position: absolute;
+    top: 73px;
+    font-weight: 400;
+    width: 122px;
+    height: 35px;
+    bottom: 10px;
+    left: 89px;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.texto_caja_batman{
+    position: absolute;
+    width: 267px;
+    height: 113px;
+    font-size: 16px;
+    line-height: 19px;
+    top: 118px;
+    box-sizing: content-box;
+    padding-left: 16px;
+    padding-right: 17px;
+
+}
+
+.ver_mas_caja_batman{
+    position: absolute;
+    width: 128.78px;
+    height: 48.52px;
+    background: #00669F;
+    left: 85px;
+    top: 460px;
+}
+
+.texto_ver_mas_batman{
+    position: absolute;
+    color: #F3F3F3;
+    font-size: 15px;
+    line-height: 18px;
+    top: 15px;
+    left: 37px;
+}
+
+.caja_harley{
+    position: absolute;
+    width: 300px;
+    height: 529px;
+    left: 362px;
+    top: 292px;
+    box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
+}
+
+.fondo_harley_caja{
+    position:relative;
+}
+
+.corazon_harley{
+    position: absolute;
+    top: 15.88px;
+    bottom: 6.25%;
+    right: 250px;
+}
+
+.harley_foto{
+    position: absolute;
+    width: 120px;
+    height: 118px;
+    left: 90px;
+    top: 128px;
+    z-index: 10;
+    border-radius: 900px;
+}
+
+.texto_harley{
+    position: absolute;
+    width: 300px;
+    background: #F3F3F3;
+    top: 190px;
+    height: 336px;
+}
+
+.harley_h2{
+    position: absolute;
+    top: 73px;
+    font-weight: 400;
+    width: 171px;
+    height: 35px;
+    bottom: 10px;
+    left: 89px;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 10px;
+    left: 65px;
+}
+
+.texto_caja_harley{
+    position: absolute;
+    width: 267px;
+    height: 113px;
+    font-size: 16px;
+    line-height: 19px;
+    top: 118px;
+    box-sizing: content-box;
+    padding-left: 16px;
+    padding-right: 17px;
+
+}
+
+.ver_mas_caja_harley{
+    position: absolute;
+    width: 128.78px;
+    height: 48.52px;
+    background: #00669F;
+    left: 85px;
+    top: 460px;
+}
+
+.texto_ver_mas_harley{
+    position: absolute;
+    color: #F3F3F3;
+    font-size: 15px;
+    line-height: 18px;
+    top: 15px;
+    left: 37px;
+}
+
+.caja_batman2{
+    position: absolute;
+    width: 300px;
+    height: 529px;
+    left: 690px;
+    top: 293px;
+    box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.75);
+}
+.fondo_batman2_caja{
+    position:relative;
+}
+
+.corazon_batman2{
+    position: absolute;
+    top: 15.88px;
+    bottom: 6.25%;
+    right: 250px;
+}
+
+.batman2_foto{
+    position: absolute;
+    width: 120px;
+    height: 118px;
+    left: 90px;
+    top: 128px;
+    z-index: 10;
+    border-radius: 900px;
+}
+.texto_batman2{
+    position: absolute;
+    width: 300px;
+    background: #F3F3F3;
+    top: 190px;
+    height: 336px;
+}
+
+.batman2_h2{
+    position: absolute;
+    top: 73px;
+    font-weight: 400;
+    width: 122px;
+    height: 35px;
+    bottom: 10px;
+    left: 89px;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.texto_caja_batman2{
+    position: absolute;
+    width: 267px;
+    height: 113px;
+    font-size: 16px;
+    line-height: 19px;
+    top: 118px;
+    box-sizing: content-box;
+    padding-left: 16px;
+    padding-right: 17px;
+
+}
+
+.ver_mas_caja_batman2{
+    position: absolute;
+    width: 128.78px;
+    height: 48.52px;
+    background: #00669F;
+    left: 85px;
+    top: 460px;
+}
+
+.texto_ver_mas_batman2{
+    position: absolute;
+    color: #F3F3F3;
+    font-size: 15px;
+    line-height: 18px;
+    top: 15px;
+    left: 37px;
+}
+
+.caja_footer{
+    position: absolute;
+    width: 1024px;
+    height: 51px;
+    left: 0px;
+    top: 972px;
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.texto_footer{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFF9F9;
+    position: absolute;
+    width: 337px;
+    height: 19px;
+    left: 16px;
+    top: 16px;
+}
