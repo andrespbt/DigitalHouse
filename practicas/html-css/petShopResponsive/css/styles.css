@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #F0A83E;
+    --color-2: #FFFFFF;
+    --color-3: #666666;
+    --color-4: #3C2313;
+    --color-5: #8A8787;
+    --color-6: #FBFAF6;
+    --color-7: #AB9C9C;
+    --color-8: #A0A0A0;
+    --color-9: #786960;
+    --color-10: #222222;
+}
+
+body{
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--color-1);
+    height: 7vh;
+    width: 100%;
+}
+
+.barraLeng {
+    display: none;
+}
+
+.navHeader {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.7rem;
+    height: 100%;
+}
+
+nav > img{
+    width: 2em;
+    max-width: 40px;
+    height: 2em;
+    max-height: 30px;
+}
+
+#logoHeader {
+    width: 6em;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+#slide {
+    background-image: url(../img/slide-bckgrnd.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    max-height: 400px;
+}
+
+.sliderText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.9rem;
+    gap: 10px;
+
+}
+
+#bienvenidaConteiner {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-2);
+    text-align: center;
+    display:table;
+    border-radius: 5px;
+    padding: 0.6rem;
+}
+
+#bienvenida {
+    height: 100%;
+    display:table-cell;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.sliderText > p {
+    color: var(--color-2);
+    padding-left: 2rem;
+    width: 50%;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+#btnComedero {
+    border: none;
+    background-color: var(--color-1);
+    height: 50px;
+    width: 40%;
+    border-radius: 5px;
+    color: var(--color-2);
+    margin-right: 1rem;
+
+}
+
+#productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+#huellaProducto {
+    width: 30%;
+    max-width: 100px;
+}
+
+.subtitulo {
+    font-size: 2.5rem;
+    padding: 0 10px;
+    text-align: center;
+    color: var(--color-4);
+}
+
+#productoNav {
+    padding: 0;
+}
+
+#listNav {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+#listNav > li {
+    width: 100%;
+    list-style: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-3);
+    padding: 0 0.1rem;
+}
+
+.productosArticuloContainer {
+    position: relative;
+    margin: 0 50px 30px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productoImagen {
+    background-color: var(--color-6);
+    width: 100%;
+    height: 300px;
+    max-width: 300px;
+}
+
+.productoNombre {
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: var(--color-4);
+
+}
+
+.productoPrecio {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+    color: var(--color-1);
+}
+
+form {
+    margin: 20px 0;
+}
+
+.contactoForm {
+
+    display: block;
+    margin: 0px auto 5px;
+    height: 40px;
+    width: 80%;
+    max-width: 400px;
+    background-color: var(--color-4);
+    color: var(--color-7);
+    font-size: 0.7rem;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+.botonesForm {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto 3px;
+}
+
+.form-btn {
+    height: 45px;
+    margin: 0px 1px 25px;
+    width: 47%;
+    border: none;
+    border-radius: 25px;
+    color: var(--color-2);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+button[type="submit"] {
+    background-color: var(--color-1);
+}
+
+button[type="reset"] {
+    background-color: var(--color-3);
+}
+
+#subscripcion {
+    width: 100%;
+    background-color: var(--color-1);
+    height: 105px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subscripcionMensaje {
+    margin-bottom: 13px;
+    margin-left: 5px;
+    position:relative
+}
+
+#subscripcion h3 {
+    display: inline-block;
+    color: var(--color-2);
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+#iconMensaje {
+    vertical-align:middle;
+    position: absolute;
+    left: 2px;
+}
+
+.subscripcionInput{
+    width: 100%;
+}
+
+#inputSuscripcion {
+    height: 40px;
+    width: 60%;
+    margin-right: 5px;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--color-8);
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+#botonSubscripcion {
+    background-color: var(--color-4);
+    height: 35px;
+    color: var(--color-2);
+    width: 7rem;
+    max-width: 100px;
+    border: none;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: var(--color-4);
+    padding-top: 10px;
+    color: var(--color-2);
+    text-align: center;
+}
+
+#footerLogo {
+    width: 40%;
+    margin: 10px auto;
+}
+
+#footerInfoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom: 30px;
+}
+
+.fondoGrisIconoFooter{
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #8A8787;
+    height: 100%;
+    border-radius: 30px;
+    border: var(--color-9) solid 5px;
+}
+
+.footerContacto {
+width: 20rem;
+max-width: 100%;
+ margin-bottom: 1rem;
+ display: flex;
+ margin: 10px auto;
+ gap: 20px;
+}
+
+#footerContacto > img {
+    display: inline-block;
+    height: 100%;
+    width: 47px;
+}
+
+.footerInfo {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.footerInfoAdicional {
+    width: fit-content;
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+    color: var(--color-5);
+}
+
+footer > p {
+    height: 1.3rem;
+    background-color: var(--color-10);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .barraLeng {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:var(--color-10);
+        color: var(--color-2);
+        font-size: 0.8rem;
+    }
+
+    .barraLeng > span {
+        margin-left: 3rem;
+    }
+
+    .leng{
+        margin-right: 3rem;
+    }
+
+    .leng > span::after {
+        content: url(../img/downArrow.svg);
+       margin-right: 10px;
+    }
+
+    header {
+        height: 120px;
+        max-height: 150px;
+    }
+
+    #nav-bar {
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .navHeader {
+        width: 45%;
+        max-width: 343px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--color-2);
+        font-size: 0.8rem;
+    }
+
+    .navHeader li {
+        list-style: none;
+    }
+
+    .navHeader li::before {
+        content: url(../img/pawprint-nav.svg);
+        margin: 5px;
+    }
+
+    #logoHeader {
+        width: 10rem;
+        max-width: 180px;
+    }
+
+    #slide {
+        height: 80vh;
+        max-height: 475px;
+        background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.svg);
+        width: 100%;
+        position:relative;
+    }
+
+    .sliderText {
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position:absolute;
+        right: 20px;
+    }
+
+    .sliderText > p {
+        width: fit-content;
+        color: var(--color-4);
+    }
+
+    #bienvenidaConteiner {
+        width: 25rem;
+        max-width: 365px;
+    }
+
+    #btnComedero {
+        width: fit-content;
+        padding: 10px;
+    }
+
+    .subtitulo {
+        font-size: 3.5rem;
+    }
+
+    #listNav > li {
+        font-size: 1.5rem;
+    }
+
+    .productosArticuloContainer{
+        margin: 0;
+    }
+
+    #articulos {
+        display: flex;
+        flex-direction: row;
+        margin: 70px 50px;
+    }
+
+    .form-btn {
+        max-width: 110px;
+    }
+
+    #subscripcion {
+        max-height: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #iconMensaje {
+        position: unset;
+    }
+
+    .subscripcionMensaje {
+        height: 100%;
+        margin-left: 3px;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    #subscripcion h3 {
+        font-size: 1.2rem;
+        max-height: 23px;
+        width: 300px;
+    }
+
+    .subscripcionInput {
+        width: 45%;
+        margin:0;
+        padding: 0;
+    }
+
+    #inputSuscripcion {
+        height: 40px;
+        max-width: 346px;
+    }
+
+    #footerInfoContainer{
+        width: fit-content;
+    }
+
+    #footerLogo {
+        margin: 0;
+        max-width: 166px;
+        max-height: 23px;
+    }
+
+    footer {
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerContacto {
+        margin-left: 60px;
+    }
+
+    #footerLogo {
+        margin-right: 60px;
+    }
+
+    footer > p {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 280px) {
+    
+    nav {
+        padding: 0.8rem;
+    }
+
+    #logoHeader {
+        width: 115px;
+    }
+
+
+    #menu {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    #bienvenida {
+        font-size: 1rem;
+    }
+
+    .sliderText > p {
+        font-size: 0.7rem;
+    }
+
+    #btnComedero {
+        padding: 10px;
+        width: fit-content;
+    }
+
+    #listNav {
+        gap: 5px;
+    }
+
+    .productosArticuloContainer{
+        margin: 20px 20px;
+    }
+
+    #subscripcion h3 {
+        font-size: 0.9rem;
+        align-self: flex-start;
+    }
+
+    #iconMensaje {
+        max-width: 30px;
+        max-height: 30px;
+        margin-top: 3px;
+    }
+
+    #inputSuscripcion {
+        width: 170px;
+    }
+
+    #botonSubscripcion {
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    footer > p {
+        font-size: 0.6rem;
+        height: fit-content;
+        padding: 3px 0;
+    }
+
+}
+

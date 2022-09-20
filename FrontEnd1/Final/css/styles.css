@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-position: 130% -10%;
+    background-repeat:no-repeat;
+    background-size: 50rem;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+main{
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-position: -80% 70%;
+    background-repeat: no-repeat;
+    background-size: 50rem;
+}
+
+:root{
+    --azul-grisaceo-oscuro: rgb(143, 148, 167);
+    --azul-muy-oscuro: rgb(29, 30, 37);
+    --azul-oscuro: rgb(35, 44, 81);
+    --rojo-brillante: rgb(242, 95, 58);
+    --rojo-muy-palido: rgb(255, 239, 234);
+    --variante-gris-claro: rgb(249, 249, 249);   
+
+
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    padding: 35px 165px 75px;
+}
+
+header nav img.hamburguesa{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 500;
+    gap: 28px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header h1 {
+    display: inline-block;
+    height: 1px;
+    visibility: hidden;
+}
+header nav ul li{
+    color: var(--azul-oscuro);
+}
+
+header nav ul li:hover{
+    color: var(--azul-grisaceo-oscuro);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+h3{
+    color: var(--azul-oscuro);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+
+button{
+    background-color: var(--rojo-brillante);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 44px;
+    width: 134px;
+}
+
+button:hover{
+    background-color: white;
+    color: var(--rojo-brillante);
+
+}
+
+main section.introduccion{
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    padding-left: 165px;
+    padding-right: 146px;
+}
+
+main section.introduccion article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    margin-right: 110px;
+    width: 439px;
+}
+
+main section.introduccion article h2{
+    color:var(--azul-oscuro);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+main section.introduccion article p{
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 28px;
+}
+
+main section.introduccion article button{
+    margin-top: 28px;
+}
+
+main section.caracteristicas {
+    display: flex;
+    gap: 125px;
+    justify-content: space-between;
+    margin-bottom: 124px;
+    margin-top: 99px;
+    padding: 0 165px;
+}
+
+main section.caracteristicas article{
+    margin-right: 125px;
+    width: calc(100% - 158px);
+}
+
+main section.caracteristicas ul li{
+    margin-bottom: 27px;
+}
+
+
+main section.caracteristicas article p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 36px;
+}
+
+
+main section.caracteristicas ul button{
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 23px;
+    width: 69px;
+}
+
+main section.caracteristicas ul button:hover{
+    background-color: var(--azul-oscuro);
+    color: white;
+}
+
+main section.caracteristicas ul span{
+    color: var(--azul-oscuro);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 8.5px;
+    text-align: center;
+}
+
+main section.caracteristicas ul p{
+    color: var(--azul-grisaceo-oscuro);
+    font-size: 1rem;
+    font-weight: 500px;
+    padding-left: 93px;
+
+}
+
+main section.opiniones{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    height: calc(100vh - 175px);
+    justify-content: space-around;
+    margin: 0px 71px;
+    width: 1298px;
+}
+
+main section.opiniones div.nav-buttons i{
+    display: none;
+}
+
+
+
+main section.opiniones h3{
+    margin-bottom: 74px;
+}
+
+main section.opiniones div:nth-of-type(1){
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main section.opiniones div article{
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    margin-bottom: 45px;
+    width: 403px;
+
+}
+
+main section.opiniones div article img{
+    bottom: 15%;
+    height: 70px;
+    position: relative;
+    width: 70px;
+}
+
+main section.opiniones div article:nth-of-type(1):hover{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main section.opiniones div article:nth-of-type(2):hover{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main section.opiniones div article:nth-of-type(3):hover{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h5{
+    color: var(--azul-oscuro);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+main section.opiniones div article p{
+    color: var(--azul-grisaceo-oscuro);
+    font-weight: 500;
+    padding: 0 21px 38px;
+}
+
+main div.main__bar{
+    align-items: center; 
+    background-color:var(--rojo-brillante);
+    display: flex;
+    height: 224px;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+main div.main__bar h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 64px 165px;
+    width: 50%;
+}
+
+main div.main__bar button{
+    background-color: white;
+    color: var(--rojo-brillante);
+    margin: 90px 165px;
+}
+
+main div.main__bar button:hover{
+    background-color: #1E1E26;
+    color: white;
+}
+
+footer div{
+    background-color: var(--azul-muy-oscuro);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer div section.redes{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 67px 134px 69px 170px;
+}
+
+footer div section.redes figure{
+    margin-bottom: 64px;
+}
+
+footer div section.redes div{
+    gap: 13px;
+}
+
+footer div section.redes div i{
+    color: white;
+}
+
+footer div section.redes div i:hover{
+    color: var(--rojo-brillante);
+}
+
+
+
+footer section.informacion{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+    margin-top: 52px;
+    width: 400px;
+}
+
+footer section.informacion ul li{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer section.informacion ul li:hover{
+    color: var(--rojo-brillante);
+    font-weight: bold;
+}
+
+footer section.informacion ul:nth-of-type(1){
+    list-style-type: none; 
+}
+
+footer section.informacion ul:nth-of-type(1) li {
+    margin-bottom: 12px;
+}
+
+footer section.informacion ul:nth-of-type(2){
+    list-style-type: none;
+}
+
+footer section.informacion ul:nth-of-type(2) li {
+    margin-bottom: 12px;
+}
+
+footer section.mail{
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+    justify-content: center;
+    margin-right: 164px;
+    width: 400px;
+}
+
+footer section.mail form input{
+    border: none;
+    border-radius: 50px;
+    height: 44px;
+    margin-right: 8px;
+    text-align: center;
+    width: 201px;
+}
+
+footer section.mail form button{
+    height: 42px;
+    width: 63px;
+}
+
+footer section.mail span{
+    color: var(--azul-grisaceo-oscuro);
+    font-size: 0.8rem;
+    font-weight: 500px;
+    margin-left: 60px;
+    width: 250px;
+}
+
+@media (max-width:375px) {
+
+    body{
+        background-position: -20% -2%;
+        background-size: 34rem;
+        align-items: center;
+    }
+
+    main{
+        background-position: 440% 19%;
+        background-size: 20rem;
+    }
+
+    header nav {
+        padding: 0 20px;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    header nav button{
+        display: none;
+    }
+
+    header nav img.hamburguesa{
+        display:initial;
+    }
+
+    main section.introduccion{
+        flex-flow: column-reverse nowrap;
+        padding: 0 20px;
+    }
+
+    main section.introduccion img{
+        width: 90vw;
+    }
+
+    main section.introduccion article{
+        align-items: center;
+        gap: 0px;
+        margin: 0px 60px;
+        padding: 0px 20px 20px 20px;
+        width: 100%;
+    }
+
+    main section.introduccion article h2{
+        font-size: 2.1rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    main section.introduccion article p{
+        color: var(--azul-grisaceo-oscuro);
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px 15px;
+        text-align: center;
+    }
+    main section.caracteristicas{
+        flex-flow: wrap;
+        gap: 50px;
+        height: unset;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    main section.caracteristicas article{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 40px;
+        padding: 0px 0px;
+        width: 100%;
+    }
+
+    main section.caracteristicas h3{
+        font-size: 1.7rem;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    main section.caracteristicas article p{
+        color: var(--azul-grisaceo-oscuro);
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main section.caracteristicas ul li button{
+        font-size: 0.8rem;
+        height: 30px;
+        margin-right: 10px;
+        width: 50px;
+    }
+    
+    main section.opiniones{
+        height: unset;
+        margin: 0px;
+        padding: 0px 50px;
+        width: 100%;
+    }
+
+
+    main section.caracteristicas ul li div{
+        background-color: var(--rojo-muy-palido);
+        color: var(--azul-oscuro);
+        margin-left: 20px;
+    }
+
+    main section.caracteristicas ul li p {
+        font-size: 1rem;
+        padding: 5px 20px;
+    }
+
+    main section.opiniones h3{
+        font-size: 1.7rem;
+        margin-top: 20px;
+    }
+
+    main section.opiniones div article:nth-of-type(1){
+        display: none;
+    }
+
+    main section.opiniones div article:nth-of-type(3){
+        display: none;
+    }
+
+    main section.opiniones div article:nth-of-type(2){
+        padding: 0px 20px;
+        width: 90vw;
+    }
+
+    main section.opiniones div article:nth-of-type(2) p{
+        font-size: 1rem;
+    }
+
+    main section.opiniones div.nav-buttons{
+        align-items: center;
+        background-color: white;
+        display: flex;
+        flex-flow: column;
+    }
+
+    main section.opiniones div.nav-buttons div{
+        gap: 5px;
+        justify-content:center;
+    }
+
+    main section.opiniones div.nav-buttons i{
+        color: var(--rojo-brillante);
+        display: initial;
+        font-size: 10px;
+        height: 10px;
+        margin-bottom: 80px;
+    }
+
+    main div.main__bar{
+        width: 100%;
+        flex-direction: column;
+        height: unset;
+        margin-top: 40px;
+    }
+
+    main div.main__bar h2{
+        margin-top: 80px;
+        padding: 0px;
+        text-align: center;
+        width: 70%;
+    }
+
+    main div.main__bar button {
+        margin: 30px 0px 90px;
+    }
+
+    footer div:nth-of-type(1){
+        flex-flow: wrap-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer section.mail{
+        align-items: center;
+        margin: 0px;
+        margin-top: 60px;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    footer div section.mail span{
+        bottom: 20px;
+        position: absolute;
+    }
+
+    footer div section.informacion {
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 60px 0px;
+        padding: 0px;
+    }
+
+    footer div section.redes{
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+

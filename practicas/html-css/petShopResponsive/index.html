@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="barraLeng">
+        <span>Grandes ofertas en comederos</span>
+        <div class="leng">
+          <span>Español</span>
+          <span>ARG$</span>
+        </div>
+      </div>
+      <nav id="nav-bar">
+        <h1>
+          <a href="FrontCat&Dog"></a
+          ><img src="img/logo.svg" alt="FrontCat&Dog" id="logoHeader" />
+        </h1>
+        <ul class="navHeader">
+          <li>Categoías</li>
+          <li>Pets</li>
+          <li>Nosotros</li>
+          <li>Contáctanos</li>
+        </ul>
+        <img src="img/menu-icon-1.svg" alt="Menu" id="menu" />
+      </nav>
+    </header>
+    <main>
+      <section id="slide">
+        <div class="sliderText">
+          <div id="bienvenidaConteiner">
+            <h2 id="bienvenida">¡Es un placer tenerte aquí!</h2>
+          </div>
+          <p>¡Comederos en descuento!</p>
+          <button id="btnComedero">COMEDEROS</button>
+        </div>
+      </section>
+
+      <section id="productos">
+        <img src="img/pawprint-1.svg " alt="Huella" id="huellaProducto" />
+        <h2 class="subtitulo">Productos Destacados</h2>
+        <nav id="productoNav">
+          <ul id="listNav">
+            <li>Comederos</li>
+            <span>-</span>
+            <li>Accesorios</li>
+            <span>-</span>
+            <li>Comida</li>
+          </ul>
+        </nav>
+        <section id="articulos">
+          <article class="productosArticuloContainer">
+            <img
+              src="img/churrasquito.svg"
+              alt="Churrasquito"
+              class="productoImagen"
+            />
+            <p class="productoNombre">Juguete Churrasquito</p>
+            <p class="productoPrecio">$150</p>
+          </article>
+          <article class="productosArticuloContainer">
+            <img src="img/comedero.svg" alt="Comedero" class="productoImagen" />
+            <p class="productoNombre">Comedero para perro</p>
+            <p class="productoPrecio">$250</p>
+          </article>
+          <article class="productosArticuloContainer">
+            <img src="img/huesito.svg" alt="Huesito" class="productoImagen" />
+            <p class="productoNombre">Juguete Huesito</p>
+            <p class="productoPrecio">$650</p>
+          </article>
+        </section>
+      </section>
+      <section id="contacto">
+        <h2 class="subtitulo">Contáctanos</h2>
+        <form action="/">
+          <input
+            type="text"
+            placeholder=" Nombre y Apellido"
+            class="contactoForm"
+            autocomplete="name"
+          />
+          <input
+            type="email"
+            placeholder=" Ingresá tu correo electrónico"
+            class="contactoForm"
+          />
+          <input
+            type="tel"
+            placeholder=" Teléfono"
+            class="contactoForm"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            autocomplete="mobile"
+          />
+          <div class="botonesForm">
+            <button type="reset" class="form-btn">Resetear</button>
+            <button type="submit" class="form-btn">Enviar</button>
+          </div>
+        </form>
+      </section>
+      <section id="subscripcion">
+        <div class="subscripcionMensaje">
+          <img src="img/msg.svg" alt="Mensaje" id="iconMensaje" />
+          <h3>Suscríbete para más novedades</h3>
+        </div>
+        <div class="subscripcionInput">
+          <input
+            type="email"
+            placeholder="Ingresá tu correo electrónico"
+            id="inputSuscripcion"
+          />
+          <button type="submit" id="botonSubscripcion">Suscribirme</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="img/logo-2.svg" alt="Logo" id="footerLogo" />
+      <section id="footerInfoContainer">
+        <div class="footerContacto">
+          <div class="fondoGrisIconoFooter">
+            <img src="img/location.svg" alt="Localidad" />
+          </div>
+          <div class="footerTextInfo">
+            <p class="footerInfo">Localidad</p>
+            <p class="footerInfoAdicional">Calle - provincia</p>
+          </div>
+        </div>
+        <div class="footerContacto">
+          <div class="fondoGrisIconoFooter">
+            <img src="img/phone-call.svg" alt="Telefono" />
+          </div>
+          <div class="footerTextInfo">
+            <p class="footerInfo">Número de teléfono</p>
+            <p class="footerInfoAdicional">15-111-111-111</p>
+          </div>
+        </div>
+        <div class="footerContacto">
+          <div class="fondoGrisIconoFooter">
+            <img src="img/mail-1.svg" alt="Mail" />
+          </div>
+          <div class="footerTextInfo">
+            <p class="footerInfo">Correo Electrónico</p>
+            <p class="footerInfoAdicional">Dirección de correo</p>
+          </div>
+        </div>
+      </section>
+      <p id="copyRight">Todos los derechos reservados Front End</p>
+    </footer>
+  </body>
+</html>
