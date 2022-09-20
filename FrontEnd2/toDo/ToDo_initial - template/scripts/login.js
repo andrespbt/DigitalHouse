@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
     e.preventDefault();
 
     validarEmail(emailInput.value) ? '' : alerts.push('Invalid email format');
-    validarContrasenia(passwordInput.value) ? '' : alerts.push('Invalid password format');
+    validarContrasenia(passwordInput.value) ? '' : alerts.push('Invalid password');
 
     if (alerts.length > 0) {
       showAlert(alerts, 'error');
@@ -43,40 +43,17 @@ window.addEventListener('load', function () {
       .then(data => {
         if (data.jwt) {
           localStorage.setItem('jwt', data.jwt);
-          spinner.classList.add('sk-chase');
-          spinner.innerHTML = `
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          `;
-
-          form.appendChild(spinner);
-
+          showSpinner(form);
           loginBtn.remove();
 
           setTimeout(() => {
             window.location.replace('./mis-tareas.html');
           }, 2000);
         } else {
-          spinner.classList.add('sk-chase');
-          spinner.innerHTML = `
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          `;
-
-          form.appendChild(spinner);
-
+          showSpinner(form);
           loginBtn.remove();
 
           setTimeout(() => {
-            form.reset();
             spinner.remove();
             form.appendChild(loginBtn);
             alerts.push('Invalid account');
@@ -85,5 +62,19 @@ window.addEventListener('load', function () {
           }, 2000);
         }
       });
+  }
+
+  function showSpinner(container) {
+    spinner.classList.add('sk-chase');
+    spinner.innerHTML = `
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          `;
+
+    container.appendChild(spinner);
   }
 });

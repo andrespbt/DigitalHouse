@@ -12,7 +12,6 @@ window.addEventListener('load', function () {
   const formCreateTask = document.querySelector('.nueva-tarea');
   const urlBase = 'https://ctd-todo-api.herokuapp.com/v1';
   const jwt = localStorage.getItem('jwt');
-  let alerts = [];
 
   // Functions
   getUserName();

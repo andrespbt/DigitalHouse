@@ -18,7 +18,9 @@ function validarEmail(email) {
   return expressions.email.test(email);
 }
 
-function normalizarEmail(email) {}
+function normalizarEmail(email) {
+  return email.trim();
+}
 
 /* -------------------------------- password -------------------------------- */
 function validarContrasenia(contrasenia) {

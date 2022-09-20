@@ -32,9 +32,9 @@ window.addEventListener('load', function () {
 
     // Create object with the user info
     const newUser = {
-      firstName: inputFirstName.value,
-      lastName: inputLastName.value,
-      email: inputEmail.value,
+      firstName: normalizarTexto(inputFirstName.value),
+      lastName: normalizarTexto(inputLastName.value),
+      email: normalizarEmail(inputEmail.value),
       password: inputPassword.value
     };
 
